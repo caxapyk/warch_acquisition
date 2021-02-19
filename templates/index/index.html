@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title%}Главная{% endblock %}
+{% set active_page = 'index' %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h2 class="h2">АИС Комплектование архива</h2>
+</div>
+
+<p class="lead">
+    Автоматизированна иформационная система "Комплектование архива" создана для ведения учёта и контроля за работой ведомственных архивов организаций, являющихся источниками комплектования государственного архива.
+</p>
+<p class="lead">
+    <span class="text-muted">&copy; Сахарук Александр 2021, БУОО ГАОО.</span> <a href="{{ url_for('static', filename='warch_acquisition.ico') }}">Скачать иконку</a>.
+</p>
+{% endblock %}
